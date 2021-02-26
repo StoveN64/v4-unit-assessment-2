@@ -36,9 +36,9 @@ let foods = [
 */
 
 //CODE HERE
-// foods.forEach(function(element, index, array) {
+foods.forEach(function(element, index, array) {
 
-// }
+})
 
 //////////////////////////////////PROBLEMS 2-4//////////////////////////////////
 /*
@@ -85,7 +85,7 @@ const products = [
 
 //CODE HERE
 let saleProducts = products.map(function(element) {
-  return element.price *=.75
+  return {...element, price: element.price * .75}
 })
 ////////////////////PROBLEM 3////////////////////
 /*
@@ -266,18 +266,17 @@ const person = {
   favorites: {
     color: 'purple' ,
     number: 13 ,
-    book: 'The Road' ,
-    kids: [
-      {
-        name: 'Lucas',
-        age: 5 ,
-      },
-      {
-        name: 'Nathan',
-        age: 6 ,
-      },
-    ],
-  },
+    book: 'The Road' , },
+  kids: [
+    {
+       name: 'Lucas',
+       age: 5 ,
+    },
+    {
+       name: 'Nathan',
+       age: 6 ,
+    },
+  ],
 }
 //////////////////////////////////PROBLEMS 13-14//////////////////////////////////
 /*
